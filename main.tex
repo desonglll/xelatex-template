@@ -1,0 +1,26 @@
+% !TEX program = XeLaTeX
+% !TEX encoding = UTF-8
+\documentclass[UTF8,charset=none,a4paper,twoside]{ctexart}
+
+\input{styles/page.sty}
+\input{styles/font.sty}
+\input{commands.sty}
+\usepackage{hyperref}
+
+% Custom packages
+\usepackage{styles/hdr_ftr}
+\usepackage{styles/linebreak}
+
+\newcommand{\mytitle}{This is title}
+\newcommand{\myauthor}{This is author}
+\newcommand{\mydate}{\today}
+
+\begin{document}
+\setlength{\headheight}{12.7pt}
+\tableofcontents
+
+\newpage
+
+\input{contents/keep.tex}
+
+\end{document}
